@@ -1,14 +1,22 @@
-Build a Car
+## Build a Car
 
-Ever wondered how it is to build cars? Today you can have a taste of it and build your own, very simplified version of car using your programming skills. We are going to build vehicles like these below: __ ____ ____ | []\ | []\ |[] []
--o--o-' -o-o------o-' -o-o------o-o-'
+Ever wondered how it is to build cars? Today you can have a taste of it and build your own, very simplified version of car using your programming skills. We are going to build vehicles like these below: 
+```
+  __           ____                ____ 
+|  []\   |         []\   |        []  []
+-o--o-'   -o-o------o-'   -o-o------o-o-'
+```
 
 (Hope that those resemble cars|buses|trucks).
 Short introduction
 
 A single vehicle is built with 3 layers:
 
-first: ' ____' second: | []\ third: -o--o-'
+```
+first:  ____ 
+second: | []\ 
+third: -o--o-'
+```
 
     first layer (top) consists of one space character ' ' and underscores '_';
 
@@ -16,7 +24,7 @@ first: ' ____' second: | []\ third: -o--o-'
 
     third layer consists of dashes (frame) '-', lowercase O letters (axles|wheels) 'o' and one single quote (headlight) "'"
 
-Problem specification
+## Problem specification
 
 Your aim is to implement 'Car' class/constructor. The instance of 'Car' must contain 2 properties/members body and chassis which themselves are objects.
 
@@ -35,10 +43,11 @@ The Car constructor takes two integer arguments:
 
 The specified error cases are the only 3 expected (in Java: throw an unchecked exception), therefore the tests will use only positive integers as parameters to Car()
 Design guidelines
-
+```
     _____________          ______          __________
    |[][]   [][][]\        |[][][]\        |        []\
    -o-o-o-----o-o-'       -o----o-'       -o-o------o-'
+```
 
 As we can see, our Car class is quite flexible in terms of number of axles and doors, and here the following applies.
 
